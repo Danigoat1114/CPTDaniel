@@ -7,5 +7,6 @@ public class repotest{
 		con.println("TGIF");
 		con.println("CPT TIME!");
 		con.println("I like cpt");
+		con.println("But i like video games more");
 	}
 }

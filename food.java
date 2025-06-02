@@ -4,7 +4,7 @@ public class food{
 	public static void main(String[] args){
 		Console con = new Console();
 		String strWords[][];
-		strWords = new String[9][1];
+		strWords = new String[10][2];
 		int intRand;
 		strWords[0][0] = "Kimchi";
 		intRand = (int)(Math.random()*100+1);
@@ -38,12 +38,36 @@ public class food{
 		strWords[9][1] = intRand + ""; 
 		
 		int intCount;
-		con.println("Before sorting");
+	
+
+		int intCount2;
+		String strNameTemp;
+		String strCriticsTemp;
+
+		
+		for(intCount2 = 0; intCount2 < 9-1; intCount2++){
+		for(intCount =0; intCount < 9-1; intCount++){
+			if(Integer.parseInt(strWords[intCount][1]) > Integer.parseInt(strWords[intCount+1][1])){
+				strNameTemp = strWords[intCount][0];
+				strWords[intCount][0] = strWords[intCount+1][0];
+				strWords[intCount+1][0] = strNameTemp;
+				strCriticsTemp = strWords[intCount][1];
+				strWords[intCount][1] = strWords[intCount+1][1];
+				strWords[intCount+1][1] = strCriticsTemp;
+
+			}
+		}
+	}
+	
 		for(intCount = 0; intCount < 9; intCount++){
-			con.println(strWords[intCount][0] + " - " + strWords[intCount][1]);
+		con.println(strWords[intCount][0] + " - " + strWords[intCount][1] );
 		}
 	}
 }
+
+	
+
+
 		
 	
 

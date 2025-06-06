@@ -6,6 +6,8 @@ public class food{
 		String strWords[][];
 		strWords = new String[10][2];
 		int intRand;
+		TextInputFile todo = new TextInputFile("food.txt");
+		strWords = foods.readLine;
 		strWords[0][0] = "Kimchi";
 		intRand = (int)(Math.random()*100+1);
 		strWords[0][1] = intRand + ""; 
@@ -54,6 +56,7 @@ public class food{
 				strCriticsTemp = strWords[intCount][1];
 				strWords[intCount][1] = strWords[intCount+1][1];
 				strWords[intCount+1][1] = strCriticsTemp;
+				
 
 			}
 		}
@@ -62,8 +65,10 @@ public class food{
 		for(intCount = 0; intCount < 9; intCount++){
 		con.println(strWords[intCount][0] + " - " + strWords[intCount][1] );
 		}
+		con.println(strWords[0][0]);
 	}
 }
+
 
 	
 

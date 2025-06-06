@@ -54,6 +54,7 @@ public class VideoGames{
 				strCriticsTemp = strWords[intCount][1];
 				strWords[intCount][1] = strWords[intCount+1][1];
 				strWords[intCount+1][1] = strCriticsTemp;
+					bestfood.println(strWords[0][0]);
 
 			}
 		}
@@ -62,5 +63,6 @@ public class VideoGames{
 		for(intCount = 0; intCount < 9; intCount++){
 		con.println(strWords[intCount][0] + " - " + strWords[intCount][1] );
 		}
+	
 	}
 }

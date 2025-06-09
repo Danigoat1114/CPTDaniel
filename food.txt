@@ -1,0 +1,10 @@
+Kimchi
+Burger
+Pizza
+Fries
+Cheese
+Tofu
+Curry
+Rice
+Noodle
+Chicken

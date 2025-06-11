@@ -4,6 +4,7 @@ import java.awt.Color;
 public class Game {
     public static void main(String[] args) {
         Console con = new Console("Fun!", 700,700);
+        System.out.println("Program started");
         double dblX = 400;
         double dblY = 400;
         double dblZ = -1;
@@ -35,7 +36,7 @@ public class Game {
             if(strInitial.equals("P")) {
                 con.setDrawColor(Color.BLACK);
                 con.fillRect(0,0,700,700);
-                con.println("What is your name?");
+				con.println("What is your name?");
                 strName = con.readLine();
                 con.println("Here are available themes");
                 con.println("\n\nVideoGames.txt");
@@ -43,6 +44,13 @@ public class Game {
                 con.println("Which one do you wanna play?");
                 strtheme = con.readLine();
                 strInitial2 = strtheme.substring(0,1);
+              if(strInitial.equals("Q")){
+				 con.clear();
+				 }
+			  if(strInitial.equals("A")){
+				 con.clear();
+				 }
+				
 
                 if(strInitial2.equals("F")) {
                     String strWords[][];

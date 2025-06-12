@@ -1,3 +1,7 @@
+// My name is Daniel
+// The name of this program is Game.java
+// Last modified date: Jun 12
+// The version of this game is 1.23
 import arc.*;
 import java.awt.Color;
 

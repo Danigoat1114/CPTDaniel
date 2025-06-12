@@ -177,7 +177,7 @@ public class Game {
                     int intTries = strTheWord.length();
 
                     if (strName.equalsIgnoreCase("statitan")) {
-                        intTries += 5;
+                        intTries = intTries +5;
                     }
 
                     String strProgress = "-".repeat(strTheWord.length());
